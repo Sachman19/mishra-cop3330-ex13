@@ -23,7 +23,7 @@ public class Main {
         int compound = input.nextInt();
 
         // A = P(1 + r/t) ^ (n * t)
-        double total = Math.round(100 * principal * Math.pow((1 + (interest / years)), (compound * years))) / 100.0;
+        double total = Math.round(100 * principal * Math.pow((1 + (interest / compound)), (compound * years))) / 100.0;
 
         System.out.println();
         System.out.printf("$%.2f invested for %d years at %.1f interest compounded %d times per year is $%.2f", principal, years, interest * 100, compound, total);
